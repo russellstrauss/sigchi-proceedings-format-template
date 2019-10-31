@@ -5,22 +5,22 @@
 % copyright statement.
 
 % Copyright
-\CopyrightYear{2016}
+%\CopyrightYear{2016}
 %\setcopyright{acmcopyright}
-\setcopyright{acmlicensed}
+%\setcopyright{acmlicensed}
 %\setcopyright{rightsretained}
 %\setcopyright{usgov}
 %\setcopyright{usgovmixed}
 %\setcopyright{cagov}
 %\setcopyright{cagovmixed}
 % DOI
-\doi{http://dx.doi.org/10.475/123_4}
+%\doi{http://dx.doi.org/10.475/123_4}
 % ISBN
-\isbn{123-4567-24-567/08/06}
+%\isbn{123-4567-24-567/08/06}
 %Conference
-\conferenceinfo{CHI'16,}{May 07--12, 2016, San Jose, CA, USA}
+%\conferenceinfo{CHI'16,}{May 07--12, 2016, San Jose, CA, USA}
 %Price
-\acmPrice{\$15.00}
+%\acmPrice{\$15.00}
 
 % Use this command to override the default ACM copyright statement
 % (e.g. for preprints).  Consult the conference website for the
@@ -67,11 +67,9 @@
 % so you remain anonymous.
 \def\plaintitle{Evaluating the Effect of Induced Synesthesia in Learning a Musical Skill}
 \def\plainauthor{First Author, Second Author, Third Author,
-  Fourth Author, Fifth Author, Sixth Author}
+  Fourth Author, Fifth Author}
 \def\emptyauthor{}
-\def\plainkeywords{Authors' choice; of terms; separated; by
-  semicolons; include commas, within terms only; required.}
-\def\plaingeneralterms{Documentation, Standardization}
+\def\plainkeywords{synesthesia; musical learning; learning augmentation; ubiquitous computing; ubicomp; gatech; georgia institute of technology; computing;}
 
 % llt: Define a global style for URLs, rather that the default one
 \makeatletter
@@ -160,8 +158,42 @@
 
 \section{Introduction}
 
-Synesthesia is a condition of the human mind where seemingly unrelated senses are experienced simultaneously [1]. An example of this is seeing color when you hear sound or seeing written words and numbers in color. The current data shows that 2\% of the population has some degree of this condition, with a larger concentration in artistic communities. This suggests that there is a correlation between creative skill and sensory experience. Synesthetes have a biological advantage which makes them more receptive to early exploration and adoption thus translating into more expertise in adulthood.
+Synesthesia is a condition of the human mind where seemingly unrelated senses are experienced simultaneously \cite{Ramachandran}. An example of this is seeing color when you hear sound or seeing written words and numbers in color. The current data shows that 2\% of the population has some degree of this condition, with a larger concentration in artistic communities. This suggests that there is a correlation between creative skill and sensory experience. Synesthetes have a biological advantage which makes them more receptive to early exploration and adoption thus translating into more expertise in adulthood.
 
+Our hypothesis is that a consistent mapping of an auditory stimulus to a visual one aids in recognition and recollection significantly more than just an auditory stimulus alone. It is important to highlight that this mapping should be consistent, it is not the addition of a visual stimulus but rather a stimulus that always appears alongside the auditory one.
+
+\section{Previous/Related Work}
+
+Palmer, Langlois and Schloss \cite{Langlois} studied how non-synesthetes associate color to classical music. They tested the hypothesis that the color associations were dependent on the emotion that people associate the music. Participants chose colors that they thought were consistent with certain musical excerpts, and later chose emotions that correspond to the excerpts and the colors separately. The emotional ratings of the musical excerpts were found to be highly correlated to the emotional associations of the colors chosen. Their idea that non-synesthetes can form associations between music with color was used as a basis for this study.
+
+This is also supported by a study from Rothen et al, [3], which analyzed training procedures used to induce synesthesia in non-synesthetes. This included attempts at inducing sound-color synesthesia through methods of repetitive conditioning. In particular, the work done by Howells [4] which mapped two notes to two different colors, gave promising results with cumulative conditioning. Some participants could see the colors associated with the notes even when presented with a white stimulus. Kelly [5] also discussed the role of conditioning while attempting to induce synesthesia using seven tone-color mappings for notes in an octave. 
+
+The effect of colored notation on music-reading skills was tested by Rogers [6] with elementary school children. The study concluded that color-trained students performed better while reading colored notation, but did not show a significant improvement while reading uncolored notation. It suggested that the benefits of this method depends on how the acquired musical skills could be relayed from colored to uncolored notation. A salient point in this study is that the color associations were changed from week to week so that the subjects did not become dependent on colors. However, this study tested whether a consistent mapping of colors can result in a better grasp of musical skills. 
+
+Kuo and Chuang [7] proposed a colored notation system as an alternative to standard sheet music. They interviewed music education professionals to analyze the problems that beginners face while learning an instrument: memorizing pitches in scores, identify the corresponding notes on the instrument, slow reading and incorrect note playing. The study also identified some of the obstacles of using traditional sheet music: difficult to read, not visually interesting because of lack of color, and use of additional ledger lines which tends to confuse learners. The authors used the idea of synesthesia to propose a colored notation system with different shapes to overcome these drawbacks. 
+
+\section{Our Work}
+
+Add here
+
+\section{Discussion}
+
+Our initial results are very encouraging since we found a significant difference in chord recognition for the test condition. This is not to say that our participants are better at recognizing the sound for G, but rather learning that when G sounds it is a yellow color. This association does not increase the recognition of the G chord alone, but rather must always be coupled to the yellow color; as it is the case for born-synesthetes. 
+
+One challenge we faced during the experiments is that different participants had different levels of music background or skill which is hard to quantify. For the purposes of the Pilot study we combined all the results regardless of skill level. However we aimed at having an even distribution of people answering yes and no for all the tests. The variability on the results is shown on Fig 3, some participants scored very low on the interference condition (around 4) whereas one participant in particular scored 100\% in all trials. After some qualitative research we found out that she has very good relative pitch identification and already associates colors to chords. We did not expect to encounter actual synesthetes while doing our Pilot studies but it is refreshing to see that what we are trying to do using technology, they do naturally.
+
+Another issue we encountered is that some sessions were performed unsupervised by a researcher so some of the participants in this condition did not know what they had to do on the test, so the scores are lower on the first trial of the color condition. Some participants reported after the test that they were paying attention to the order of the chords, as opposed to the color of each chord, so when asked to identify the chords they didn’t utilize the color mapping. Furthermore, not being present at the time of the study, we could not gauge whether the participant was paying attention while listening to the melody or during the testing, or even if they were listening to the music in a noisy environment. 
+
+A point to note is that the selection of colors for sound-color mapping is still an avenue of research, with no published work on the comparison of color schemes currently. Our work tests whether colors are useful in learning music at all; future work could involve testing whether a particular set of mappings works better than the rest.
+
+An interesting metric would be to check after a longer period of time (a few days) whether the participants are still able to recognize the chord-color mapping and to re-do the test. We hypothesize that more than 5 minutes or listening will be required to associate each color with the corresponding chord, and this will be a point of work for our following study.
+
+\section{Future Work}
+
+This project serves as a pilot study to determine the effect of using chord-color mappings on learning a musical skill — namely identifying chords. The results of this study can be used in the domain of Mobile and Ubiquitous Computing to develop a head-worn display (HWD) that shows colors while a user listens to or plays music, based on the chord played. A prototype of a HWD that displays colors is shown in Fig. 4. It consists of four colored LEDs mounted on a pair of glasses.
+
+This type of device can then be used to induce synesthesia to augment both active and passive learning. An example of active learning would be using the device while learning to play a song, by listening to it and playing the chord that corresponds to the color seen. On the other hand, wearing the device while doing other activities will promote conditioning of the sound-color mappings and help the user improve their chord identification skills (passive learning). 
+The work that remains to be done in the project is integrating the chord-color associations on a pair of glasses with LEDs. This will involve the development of an iOS or Android application, which decides which color to display depending on the chord played. The application will dictate the color to be displayed on the glasses through Bluetooth communication.
 
 
 
@@ -185,15 +217,15 @@ Synesthesia is a condition of the human mind where seemingly unrelated senses ar
 % communications should be acknowledged in the main text, not referenced
 % (e.g., ``[Robertson, personal communication]'').
 
-% \begin{figure*}
-%   \centering
-%   \includegraphics[width=1.75\columnwidth]{figures/map}
-%   \caption{In this image, the map maximizes use of space. You can make
-%     figures as wide as you need, up to a maximum of the full width of
-%     both columns. Note that \LaTeX\ tends to render large figures on a
-%     dedicated page. Image: \ccbynd~ayman on
-%     Flickr.}~\label{fig:figure2}
-% \end{figure*}
+\begin{figure*}
+  \centering
+  \includegraphics[width=1.75\columnwidth]{figures/map}
+  \caption{In this image, the map maximizes use of space. You can make
+    figures as wide as you need, up to a maximum of the full width of
+    both columns. Note that \LaTeX\ tends to render large figures on a
+    dedicated page. Image: \ccbynd~ayman on
+    Flickr.}~\label{fig:figure2}
+\end{figure*}
 
 
 % \begin{itemize}
@@ -248,41 +280,14 @@ Synesthesia is a condition of the human mind where seemingly unrelated senses ar
 % hard-code a column break into the bbl file right before you
 % submit:
 %
-% http://stackoverflow.com/questions/2149854/how-to-manually-equalize-columns-
-% in-an-ieee-paper-if-using-bibtex
+% http://stackoverflow.com/questions/2149854/how-to-manually-equalize-columns-in-an-ieee-paper-if-using-bibtex
 %
 % Or, just remove \balance and give up on balancing the last page.
 %
-\balance{}
+% \balance{}
 
-
-
-References should be in ACM citation format:
-\url{http://www.acm.org/publications/submissions/latex_style}.  This
-includes citations to Internet
-resources~\cite{CHINOSAUR:venue,cavender:writing,psy:gangnam}
-according to ACM format, although it is often appropriate to include
-URLs directly in the text, as above. Example reference formatting for
-individual journal articles~\cite{ethics}, articles in conference
-proceedings~\cite{Klemmer:2002:WSC:503376.503378},
-books~\cite{Schwartz:1995:GBF}, theses~\cite{sutherland:sketchpad},
-book chapters~\cite{winner:politics}, an entire journal
-issue~\cite{kaye:puc},
-websites~\cite{acm_categories,cavender:writing},
-tweets~\cite{CHINOSAUR:venue}, patents~\cite{heilig:sensorama}, 
-games~\cite{supermetroid:snes}, and
-online videos~\cite{psy:gangnam} is given here.  See the examples of
-citations at the end of this document and in the accompanying
-\texttt{BibTeX} document. This formatting is a edited version of the
-format automatically generated by the ACM Digital Library
-(\url{http://dl.acm.org}) as ``ACM Ref.'' DOI and/or URL links are
-optional but encouraged as are full first names. Note that the
-Hyperlink style used throughout this document uses blue links;
-however, URLs in the references section may optionally appear in
-black.
-
-% BALANCE COLUMNS
-\balance{}
+% % BALANCE COLUMNS
+% \balance{}
 
 % REFERENCES FORMAT
 % References must be the same font size as other body text.
